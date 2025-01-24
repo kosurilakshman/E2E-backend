@@ -17,7 +17,7 @@ import { configDotenv } from "dotenv";
 const app = express();
 const port = process.env.PORT || 4000;
 app.use(cors({
-  origin: ["https://e2e-backend-dmsf.onrender.com"],
+  origin: ["https://e2e-frontend-woyl.onrender.com"],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Auth', 'X-Requested-With', 'Accept'],
  
