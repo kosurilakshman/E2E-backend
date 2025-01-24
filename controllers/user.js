@@ -188,7 +188,7 @@ export const forgotPassword = async (req, res) => {
    
       const hashPassword = await bcrypt.hash(password, 10);
       user.password=hashPassword
-   
+        user.save();
       return res.json({ success: true, message: "Password reset successfully" });
     } catch (err) {
       console.log(err.message);
