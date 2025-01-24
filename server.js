@@ -17,7 +17,7 @@ import { configDotenv } from "dotenv";
 const app = express();
 const port = 4000;
 app.use(cors({
-  origin: ['https://splendorous-banoffee-2d015d.netlify.app', 'http://localhost:5173','http://localhost:5174'],
+  origin: ['https://stellar-horse-c74713.netlify.app', 'http://localhost:5174'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Auth', 'X-Requested-With', 'Accept'],
  
